@@ -65,7 +65,7 @@ include('connect.php');
 <title>無標題文件</title>
 <style type="text/css">
 a,a:link,a:visited{color:#000000;text-decoration: none}
-a:hover{color:#F4AB25;background-color: #FFECD9;text-decoration: none;}
+a:hover{color:#1120AB;background-color: #FFECD9;text-decoration: none;}
 	#content{
 		width: auto;
 		height:50px;
