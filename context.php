@@ -81,7 +81,7 @@ include('connDB.php');
 	
 	<?
 		$q_code=$_GET["title"];
-		$sql="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE `12X12X775D101` GROUP BY `$q_code`";
+		$sql="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE `782171X44X2743D101` GROUP BY `$q_code`";
 			$rquery= mysql_query($sql);
 			$sum=0;
 			while($rs = mysql_fetch_assoc($rquery)){
@@ -108,7 +108,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X775D101=1 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2743D101=1 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -126,7 +126,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X775D101=2 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2743D101=2 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -145,7 +145,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X776=1 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2744=1 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -163,7 +163,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X776=2 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2744=2 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -181,7 +181,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X776=3 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2744=3 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -199,7 +199,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X776=4 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2744=4 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -217,7 +217,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X776=5 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2744=5 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -235,7 +235,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X776=6 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2744=6 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -254,7 +254,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X777SQ301=1 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2747D501=1 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -272,7 +272,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X777SQ301=2 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2747D501=2 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -290,7 +290,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X777SQ301=3 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2747D501=3 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -308,7 +308,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X777SQ301=4 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2747D501=4 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -326,7 +326,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X777SQ301=5 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2747D501=5 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -345,7 +345,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X778=1 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2746=1 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -363,7 +363,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X778=2 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2746=2 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -381,7 +381,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X778=3 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2746=3 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -399,7 +399,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X778=4 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2746=4 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -417,7 +417,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X778=5 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2746=5 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -435,7 +435,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X778=6 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2746=6 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -453,7 +453,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X778=7 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2746=7 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -471,7 +471,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X778=8 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2746=8 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -489,7 +489,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X778=9 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2746=9 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -507,7 +507,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X778=10 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2746=10 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -526,7 +526,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X779D501=1 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2748=1 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -544,7 +544,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X779D501=2 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2748=2 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -562,7 +562,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X779D501=3 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2748=3 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -580,7 +580,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X779D501=4 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2748=4 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];
@@ -598,7 +598,7 @@ include('connDB.php');
 		$k=0;
 		$tls = array();
 		foreach($Arr as $ar){		
-			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_12` WHERE 12X12X779D501=5 and $q_code=$ar ORDER BY `lime_survey_12`.`$q_code` ASC";
+			$sql1="SELECT $q_code , COUNT( * ) as total FROM `lime_survey_782171` WHERE 782171X44X2748=5 and $q_code=$ar ORDER BY `lime_survey_782171`.`$q_code` ASC";
 			$rquery1= mysql_query($sql1);
 			$rs1 = mysql_fetch_assoc($rquery1);
 			$tls[]=$rs1["total"];

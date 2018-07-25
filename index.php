@@ -2,7 +2,7 @@
 include('connect.php');
 
 //lime_survey_12
-		$all="SELECT * FROM `lime_survey_12`";
+		$all="SELECT * FROM `lime_survey_782171`";
  		$result_all = mysql_query($all);
 		$count_all=mysql_num_rows($result_all);
 		while($rs = mysql_fetch_assoc($result_all)){
@@ -28,34 +28,33 @@ include('connect.php');
 		$Aqid=array();
 		$Bqid=array();
 		$Cqid=array();
-		for($i=8;$i<$count_key;$i++){
+		for($i=9;$i<$count_key;$i++){
 			$abc=explode("X",$array_key[$i]);
 			switch($abc[1]){
-				case '9':
+				case '41':
 					$cut=explode("X",$array_key[$i]);
-					$Qid= mb_substr($cut[2],0,3,"utf-8"); 
+					$Qid= mb_substr($cut[2],0,4,"utf-8"); 
 					array_push($all_Atitle,$array_key[$i]);
 					array_push($Aqid,$Qid);
 					$count_Aqid=count($Aqid);
 					break;
-				case '10':
+				case '42':
 					$cut=explode("X",$array_key[$i]);
-					$Qid= mb_substr($cut[2],0,3,"utf-8"); 
+					$Qid= mb_substr($cut[2],0,4,"utf-8"); 
 					$all_Btitle[$Qid][]=$array_key[$i];
 					//array_push($all_Btitle,$array_key[$i]);
 					$Bqid[]=$Qid;
 					$count_Bqid=count($Bqid);
 					break;
-				case '11':
+				case '43':
 					$cut=explode("X",$array_key[$i]);
-					$Qid= mb_substr($cut[2],0,3,"utf-8"); 
+					$Qid= mb_substr($cut[2],0,4,"utf-8"); 
 					array_push($all_Ctitle,$array_key[$i]);
 					array_push($Cqid,$Qid);
 					$count_Cqid=count($Cqid);
 					break;
 			}
 		}
-
 	
 ?>
 <!doctype html>
@@ -112,8 +111,10 @@ a:hover{color:#1120AB;background-color: #FFECD9;text-decoration: none;}
 			
 				for($i=0;$i<$acount_question;$i++){
 					$aarray_question[$i]=mysql_fetch_array($aresult_question);
-					if($Aqid[$ii]=='720'||$Aqid[$ii]=='721'||$Aqid[$ii]=='727'||$Aqid[$ii]=='728'||$Aqid[$ii]=='791'){
+					if($Aqid[$ii]=='2688'||$Aqid[$ii]=='2689'||$Aqid[$ii]=='2696'||$Aqid[$ii]=='2695'||$Aqid[$ii]=='2759'){
 						$a='context_m.php?qid='.$Aqid[$ii].'&title='.$all_Atitle[$ii].'>';
+					}else if ($Aqid[$ii]=='2762'){
+						break;
 					}else{
 						$a='context.php?qid='.$Aqid[$ii].'&title='.$all_Atitle[$ii].'>';
 					}
