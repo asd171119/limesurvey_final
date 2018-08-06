@@ -123,7 +123,8 @@ include('connDB.php');
 						echo "<td>0</td>";
 					}else{
 						if($array[$ii][0]=='Y'){
-						echo "<td>".$array[$ii][1]."</td>";
+							$ans=$array[$ii][1]/$sum*100;
+						echo "<td>".round($ans,2)."  %</td>";
 						}
 					}
 					
@@ -150,7 +151,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>		
@@ -172,7 +174,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>		
@@ -195,7 +198,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -217,7 +221,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -239,7 +244,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>	
 	</tr>	
@@ -261,7 +267,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>			
 	</tr>		
@@ -283,7 +290,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>		
 	</tr>		
@@ -305,7 +313,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>		
 	</tr>		
@@ -328,7 +337,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -350,7 +360,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -372,7 +383,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>		
 	</tr>	
@@ -394,7 +406,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>		
 	</tr>		
@@ -416,7 +429,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>		
 	</tr>	
@@ -439,7 +453,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -461,7 +476,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -483,7 +499,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -505,7 +522,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>		
@@ -527,7 +545,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -549,7 +568,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -571,7 +591,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -593,7 +614,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -615,7 +637,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>		
@@ -637,7 +660,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>		
@@ -660,7 +684,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -682,7 +707,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -704,7 +730,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -726,7 +753,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>		
@@ -748,7 +776,8 @@ include('connDB.php');
 			}
 			echo "<td>".$k."</td>";
 			for($ii=0;$ii<$count;$ii++){
-				echo "<td>".$y[$ii]."</td>";
+				$ans=$y[$ii]/$k*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	

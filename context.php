@@ -97,7 +97,8 @@ include('connDB.php');
 			$rquery= mysql_query($sql);
 			foreach($Arr as $rr){
 				if(!isset($k_d[$rr])) $k_d[$rr]=0;
-				echo "<td>".$k_d[$rr]."</td>";
+				$ans=$k_d[$rr]/$sum*100;
+				echo "<td>".round($ans,2)."  %</td>";
 			}
 		?>
 	</tr>	
@@ -116,7 +117,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}	
 		?>
 	</tr>		
@@ -134,7 +136,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}	
 		?>
 	</tr>		
@@ -153,7 +156,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}	
 		?>
 	</tr>	
@@ -171,7 +175,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}	
 		?>
 	</tr>	
@@ -189,7 +194,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}	
 		?>	
 	</tr>	
@@ -207,7 +213,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}	
 		?>			
 	</tr>		
@@ -225,7 +232,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}	
 		?>		
 	</tr>		
@@ -243,7 +251,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}	
 		?>		
 	</tr>		
@@ -262,7 +271,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -280,7 +290,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -298,7 +309,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>		
 	</tr>	
@@ -316,7 +328,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>		
 	</tr>		
@@ -334,7 +347,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>		
 	</tr>	
@@ -353,7 +367,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -371,7 +386,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -389,7 +405,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -407,7 +424,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>		
@@ -425,7 +443,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -443,7 +462,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -461,7 +481,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -479,7 +500,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -497,7 +519,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>		
@@ -515,7 +538,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>		
@@ -534,7 +558,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -552,7 +577,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -570,7 +596,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	
@@ -588,7 +615,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>		
@@ -606,7 +634,8 @@ include('connDB.php');
 		}
 		echo "<td>".$k."</td>";
 		foreach($tls as $tl){
-			echo "<td>".$tl."</td>";
+			$ans=$tl/$k*100;
+			echo "<td>".round($ans,2)."  %</td>";
 		}
 		?>
 	</tr>	

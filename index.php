@@ -61,7 +61,7 @@ include('connect.php');
 <html>
 <head>
 <meta charset="utf-8">
-<title>無標題文件</title>
+<title>日月潭問卷分析</title>
 <style type="text/css">
 a,a:link,a:visited{color:#000000;text-decoration: none}
 a:hover{color:#1120AB;background-color: #FFECD9;text-decoration: none;}
@@ -104,24 +104,27 @@ a:hover{color:#1120AB;background-color: #FFECD9;text-decoration: none;}
 	  //question
 		for($ii=0;$ii<$count_Aqid;$ii++){
 			$j=$ii+1;
-			if($Aqid[$ii]!=$Aqid[$j]){
-				$asql_question="SELECT `question` FROM `lime_questions` WHERE `language`='zh-Hant-TW' AND `qid`='$Aqid[$ii]' ";
-				$aresult_question = mysql_query($asql_question);
-				$acount_question=mysql_num_rows($aresult_question); 
+			if(!empty($Aqid[$ii])&& !empty($Aqid[$j]) ){
+				
 			
-				for($i=0;$i<$acount_question;$i++){
-					$aarray_question[$i]=mysql_fetch_array($aresult_question);
-					if($Aqid[$ii]=='2688'||$Aqid[$ii]=='2689'||$Aqid[$ii]=='2696'||$Aqid[$ii]=='2695'||$Aqid[$ii]=='2759'){
-						$a='context_m.php?qid='.$Aqid[$ii].'&title='.$all_Atitle[$ii].'>';
-					}else if ($Aqid[$ii]=='2762'){
-						break;
-					}else{
-						$a='context.php?qid='.$Aqid[$ii].'&title='.$all_Atitle[$ii].'>';
+				if($Aqid[$ii]!=$Aqid[$j]){
+					$asql_question="SELECT `question` FROM `lime_questions` WHERE `language`='zh-Hant-TW' AND `qid`='$Aqid[$ii]' ";
+					$aresult_question = mysql_query($asql_question);
+					$acount_question=mysql_num_rows($aresult_question); 
+				
+					for($i=0;$i<$acount_question;$i++){
+						$aarray_question[$i]=mysql_fetch_array($aresult_question);
+						if($Aqid[$ii]=='2688'||$Aqid[$ii]=='2689'||$Aqid[$ii]=='2696'||$Aqid[$ii]=='2695'||$Aqid[$ii]=='2759'){
+							$a='context_m.php?qid='.$Aqid[$ii].'&title='.$all_Atitle[$ii].'>';
+						}else if ($Aqid[$ii]=='2762'){
+							break;
+						}else{
+							$a='context.php?qid='.$Aqid[$ii].'&title='.$all_Atitle[$ii].'>';
+						}
+						echo '<tr><td><a href='.$a.$aarray_question[$i]['question'].'</a></td></tr>';
 					}
-					echo '<tr><td><a href='.$a.$aarray_question[$i]['question'].'</a></td></tr>';
 				}
 			}
-			
 		}
 	  
 	  ?>
@@ -160,7 +163,12 @@ a:hover{color:#1120AB;background-color: #FFECD9;text-decoration: none;}
 	 foreach( $bqi as $i=>$b){
 		
 		 foreach( $bi[$i] as $aa=>$bv){
-			 echo "<tr><td><a href=context.php?qid=".$i."&title=".$all_Btitle[$i][$aa].">".$bqi[$i][$aa].$bv."</td></tr>";
+			
+			echo "<tr><td><a href=context.php?qid=".$i."&title=".$all_Btitle[$i][$aa].">".strip_tags($bqi[$i][$aa].$bv)."</td></tr>";
+			 
+		
+			
+			
 		 }
 		
 	 }
@@ -178,17 +186,19 @@ a:hover{color:#1120AB;background-color: #FFECD9;text-decoration: none;}
 	  //question
 		for($ii=0;$ii<$count_Cqid;$ii++){
 			$j=$ii+1;
-			if($Cqid[$ii]!=$Cqid[$j]){
-				$csql_question="SELECT `question` FROM `lime_questions` WHERE `language`='zh-Hant-TW' AND `qid`='$Cqid[$ii]' ";
- 				$cresult_question = mysql_query($csql_question);
-				$ccount_question=mysql_num_rows($cresult_question); 
-			
-				for($i=0;$i<$ccount_question;$i++){
-					$carray_question[$i]=mysql_fetch_array($cresult_question); 
-					preg_match_all('/[\x{4e00}-\x{9fff}]+/u',$carray_question[$i]['question'] , $matches);
-					$carray_question[$i]['question'] = join('', $matches[0]);
-					//echo $carray_question[$i]['question'];
-					echo '<tr><td><a href=context.php?qid='.$Cqid[$ii].'&title='.$all_Ctitle[$ii].'>'.$carray_question[$i]['question'].'</a></td></tr>';
+			if(!empty($Cqid[$ii])&&!empty($Cqid[$j])){
+				if($Cqid[$ii]!=$Cqid[$j]){
+					$csql_question="SELECT `question` FROM `lime_questions` WHERE `language`='zh-Hant-TW' AND `qid`='$Cqid[$ii]' ";
+					$cresult_question = mysql_query($csql_question);
+					$ccount_question=mysql_num_rows($cresult_question); 
+				
+					for($i=0;$i<$ccount_question;$i++){
+						$carray_question[$i]=mysql_fetch_array($cresult_question); 
+						preg_match_all('/[\x{4e00}-\x{9fff}]+/u',$carray_question[$i]['question'] , $matches);
+						$carray_question[$i]['question'] = join('', $matches[0]);
+						//echo $carray_question[$i]['question'];
+						echo '<tr><td><a href=context.php?qid='.$Cqid[$ii].'&title='.$all_Ctitle[$ii].'>'.$carray_question[$i]['question'].'</a></td></tr>';
+					}
 				}
 			}
 		}
